@@ -12,5 +12,5 @@ const bubbleSort = (array) => {
   return array;
 };
 
-const sorted_array = bubbleSort([10, 8, 0, -2, 1, 9]);
+const sorted_array = bubbleSort([5000, 50000, -99999999999, 0.001]);
 console.log(sorted_array);
