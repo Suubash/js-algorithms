@@ -1,6 +1,7 @@
 const bubbleSort = (array) => {
   array.forEach(() => {
     array.filter((_, index, array) => {
+      // extract if condition in another function
       if (array[index] > array[index + 1]) {
         let temp = array[index];
         array[index] = array[index + 1];
