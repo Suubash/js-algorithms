@@ -4,11 +4,15 @@
 // output: 42
 
 const addPositiveValuesFromArray = (array) => {
-  const new_array = array.filter((element) => element > 0);
-  return new_array.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    0
-  );
+  try {
+    const new_array = array.filter((element) => element > 0);
+    return new_array.reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      0
+    );
+  } catch (error) {
+    return 0;
+  }
 };
 
 const sumFinder = addPositiveValuesFromArray([1, -4, 12, 0, -3, 29, -150]);
