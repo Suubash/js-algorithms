@@ -135,8 +135,22 @@ console.log(number);
 
 // Exercise 12: create a function that destructures the query parameters of a url and adds them in an object as key value pairs and then returns the object
 
-const queryDestructurer = (query) => {
-  // TODO:
+const queryDestructurer = (url) => {
+  const splitted = url.split("?");
+  const params = splitted[1].split("&");
+
+  let obj = {};
+  const keyValue = params.map((param) => param.split("="));
+  console.log(keyValue);
+
+  for (let i = 0; i < keyValue.length; i++) {
+    for (let j = 0; j < keyValue[i].length; j++) {
+      obj[keyValue[i][0]] = keyValue[i][1];
+    }
+  }
+
+  return obj;
 };
 console.log("--------Exercise 12-------");
-queryDestructurer("https://hello.com?search=hello&id=4");
+const paramObj = queryDestructurer("https://hello.com?search=hello&id=4");
+console.log(paramObj);
