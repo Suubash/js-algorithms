@@ -1,5 +1,7 @@
 // Exercise 3: get only the companies that have category Retail, increment their start by 1 and append in the DOM a div that has the name, the category, the start and the end in paragraphs elements
 
+// Please run this file from exercise-3.html
+
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
   { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
@@ -21,7 +23,6 @@ retailCategoryComapies.forEach(
 
 let text = "";
 retailCategoryComapies.map((company) => {
-  console.log(company);
   text += `${company.name}, ${company.category}, ${company.start}, ${company.end} </br>`;
 });
 
