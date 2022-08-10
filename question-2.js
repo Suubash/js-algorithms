@@ -10,7 +10,8 @@ const findMeanAndMedian = (array) => {
     const arrayLength = sortedArray.length;
 
     const sum = sortedArray.reduce(
-      (previousValue, currentValue) => previousValue + currentValue
+      (previousValue, currentValue) => previousValue + currentValue,
+      0
     );
     const mean = sum / arrayLength;
 
