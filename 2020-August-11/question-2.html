@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Emoji</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #fff0f3;
+      }
+
+      .head {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid black;
+        background-color: #ffc0cb;
+
+        position: relative;
+      }
+
+      .ears {
+        z-index: -10;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid black;
+        background-color: #ffc0cb;
+
+        position: absolute;
+        top: -10px;
+      }
+
+      .ear-1 {
+        left: 10px;
+      }
+
+      .ear-2 {
+        right: 10px;
+      }
+
+      .eyes {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 40px;
+      }
+
+      .eye-1 {
+        left: 30px;
+      }
+      .eye-2 {
+        right: 30px;
+      }
+
+      .pupils {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: black;
+      }
+
+      .nose {
+        width: 100px;
+        height: 60px;
+        border-radius: 35%;
+        border: 2px solid black;
+        background-color: #f57187;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+      }
+
+      .nostrils {
+        height: 30px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="ears ear-1"></div>
+      <div class="ears ear-2"></div>
+      <div class="eyes eye-1">
+        <div class="pupils"></div>
+      </div>
+
+      <div class="eyes eye-2">
+        <div class="pupils"></div>
+      </div>
+
+      <div class="nose">
+        <div class="nostrils nostril-1"></div>
+        <div class="nostrils nostril-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
