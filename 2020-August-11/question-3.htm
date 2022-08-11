@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stepper Form</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #cacaca;
+      }
+
+      .stepper {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+
+        /* background: red; */
+      }
+
+      .line {
+        position: absolute;
+        top: 13px;
+        left: 50px;
+        z-index: -10;
+        width: 80%;
+        height: 3px;
+        background-color: #000;
+      }
+
+      .step-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+
+      .active {
+        background-color: #009900;
+        color: white;
+      }
+
+      .content {
+        margin: 20px 10px;
+      }
+
+      .content > div {
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        border-left: 4px solid;
+      }
+
+      .content-1 {
+        border-color: blue;
+        color: blue;
+      }
+
+      .content-2 {
+        border-color: brown;
+        color: brown;
+      }
+
+      .content-3 {
+        border-color: orange;
+        color: orange;
+      }
+
+      .content-4 {
+        border-color: green;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stepper">
+        <div class="line"></div>
+
+        <div class="step-container">
+          <div class="step active">1</div>
+          <p>Product Selection</p>
+        </div>
+        <div class="step-container">
+          <div class="step">2</div>
+          <p>Payment Method</p>
+        </div>
+        <div class="step-container">
+          <div class="step">3</div>
+          <p>Payment Form</p>
+        </div>
+        <div class="step-container">
+          <div class="step">4</div>
+          <p>Purchase Success</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <input type="checkbox" checked />
+          <p>AlgoExpert</p>
+        </div>
+        <div class="content-2">
+          <input type="checkbox" />
+          <p>SystemExpert</p>
+        </div>
+        <div class="content-3">
+          <input type="checkbox" />
+          <p>MLExpert</p>
+        </div>
+
+        <div class="content-4">
+          <input type="checkbox" checked />
+          <p>FrontendExpert</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
