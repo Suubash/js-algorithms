@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robot</title>
+
+    <style>
+      body {
+        height: 100vh;
+        background-color: #202020;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .robot-head {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        background-color: #a4d9eb;
+        border: 5px solid #9bbcc2;
+        border-radius: 20px;
+
+        position: relative;
+      }
+
+      .top {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bulb {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #ffa500;
+      }
+
+      .stick {
+        height: 15px;
+        z-index: -1;
+        width: 10px;
+        background-color: #808080;
+
+        margin-top: -5px;
+      }
+
+      .ear {
+        width: 10px;
+        height: 50px;
+        background-color: #c90a0a;
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .ear-1 {
+        border-radius: 5px 0 0 5px;
+        left: -15px;
+      }
+
+      .ear-2 {
+        border-radius: 0 5px 5px 0;
+        right: -15px;
+      }
+
+      .eyes {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .eye {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        background-color: #ffffff;
+        border: 5px solid #00b3ff;
+      }
+
+      .nose {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+
+        border-bottom: 30px solid #c90a0a;
+
+        inset: 0;
+        margin: auto;
+      }
+
+      .mouth {
+        width: 100px;
+        height: 25px;
+        background-color: #dedede;
+
+        border: 1px solid black;
+        border-radius: 20px;
+
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .teeth {
+        width: 5px;
+        height: 100%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="robot-head">
+      <div class="top">
+        <div class="bulb"></div>
+        <div class="stick"></div>
+      </div>
+
+      <div class="ears">
+        <div class="ear ear-1"></div>
+        <div class="ear ear-2"></div>
+      </div>
+
+      <div class="eyes">
+        <div class="eye eye-1"></div>
+        <div class="eye eye-2"></div>
+      </div>
+
+      <div class="nose"></div>
+
+      <div class="mouth">
+        <div class="teeth"></div>
+        <div class="teeth"></div>
+        <div class="teeth"></div>
+        <div class="teeth"></div>
+      </div>
+    </div>
+  </body>
+</html>
