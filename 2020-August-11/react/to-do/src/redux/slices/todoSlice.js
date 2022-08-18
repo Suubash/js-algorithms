@@ -10,7 +10,7 @@ const todoSlice = createSlice({
   initialState: INITIAL_STATE,
   reducers: {
     addTodo: (state, action) => {
-      return { ...state, todos: [...state.todos, action.payload] };
+      return { ...state, todos: [action.payload, ...state.todos] };
     },
 
     removeTodo: (state, action) => {

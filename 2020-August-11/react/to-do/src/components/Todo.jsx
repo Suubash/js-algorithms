@@ -34,7 +34,13 @@ const Todo = () => {
                   checked={todo.isCompleted}
                   onChange={(e) => toggleCheckbox(e, todo.id)}
                 />
-                <p className="task-title">{todo.title}</p>
+                <p
+                  className={`task-title ${
+                    todo.isCompleted && "strike-through"
+                  }`}
+                >
+                  {todo.title}
+                </p>
                 <button onClick={() => handleRemove(todo.id)}>X</button>
               </li>
             ))
