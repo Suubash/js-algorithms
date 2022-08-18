@@ -38,8 +38,8 @@ const Quiz = () => {
 
   return (
     <div className="bg-white  flex flex-col gap-4">
-      <p>
-        {correct}/{index}
+      <p className="text-green-600">
+        {correct} correct answers out of {index} questions.
       </p>
       <h1
         className="font-semibold text-lg"
