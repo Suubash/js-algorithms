@@ -1,0 +1,30 @@
+.container {
+  margin-top: 40px;
+}
+
+.table {
+  margin: auto;
+  table-layout: auto;
+
+  text-align: left;
+  border-left: 2px solid #b8b8b8;
+  border-right: 2px solid #b8b8b8;
+  border-spacing: 0;
+}
+
+.headingRow > th {
+  border-width: 1px;
+  width: 300px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+tr > th,
+tr > td {
+  padding: 10px;
+  border: 2px solid #eaeaea;
+}
+
+/* tr > td {
+  border-bottom: 2px solid #eaeaea;
+} */
